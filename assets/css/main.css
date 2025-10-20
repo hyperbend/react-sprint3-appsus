@@ -11,3 +11,34 @@
 @import './apps/note/NoteIndex.css';
 @import './apps/mail/MailIndex.css';
 @import './apps/mail/MailList.css';
+
+.mail-layout { display:flex; gap:1rem }
+.mail-folders { display:flex; flex-direction:column; gap:.5rem; min-width:120px }
+.mail-folders button.active { font-weight:700 }
+
+.mail-list { list-style:none; margin:0; padding:0 }
+.mail-list li { padding:.5rem .25rem; border-bottom:1px solid #eee }
+
+.mail-preview { cursor:pointer }
+.mail-preview.unread strong { font-weight:700 }
+.mail-preview.read strong { font-weight:400; opacity:.8 }
+
+.mail-header { display:flex; gap:1rem; align-items:center }
+.mail-details { max-width:60ch }
+
+.mail-header { display:flex; align-items:center; gap:1rem; margin-bottom:.75rem }
+.mail-header .spacer { flex:1 }
+.mail-layout { display:flex; gap:1rem }
+.mail-folders { display:flex; flex-direction:column; gap:.5rem; min-width:120px }
+.mail-folders button.active { font-weight:700 }
+
+.mail-list { list-style:none; margin:0; padding:0 }
+.mail-list li { padding:.5rem .25rem; border-bottom:1px solid #eee }
+.mail-preview { cursor:pointer }
+.mail-preview.unread strong { font-weight:700 }
+.mail-preview.read strong { font-weight:400; opacity:.8 }
+
+.mail-compose { max-width: 520px; padding:1rem; border:1px solid #ddd; border-radius:.5rem }
+.mail-compose form > div { margin-bottom:.5rem }
+.mail-compose input, .mail-compose textarea { width:100% }
+.mail-compose .actions { display:flex; gap:.5rem }

@@ -1,4 +1,4 @@
-import { MailPreview } from './MailPreview.jsx'
+import { MailPreview } from './MailPreview.jsx' // ./ (כי באותה תיקייה)
 
 export function MailList({ mails, onOpen }) {
   if (!mails || !mails.length) return <p>אין מיילים</p>
